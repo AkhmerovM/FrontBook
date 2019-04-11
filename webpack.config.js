@@ -9,7 +9,6 @@ const paths = {
 // console.log(process.env.NODE_ENV);
 module.exports = {
     context: paths.src,
-    devtool: "source-map",
     entry: {
       main: './index.js',
     },
@@ -20,7 +19,7 @@ module.exports = {
     module: {
         rules: [
         {
-            test: /\.js$/,
+            test: /\.js|.jsx$/,
             loader: 'babel-loader',
             exclude: '/node_modules'
         },
@@ -37,13 +36,17 @@ module.exports = {
     plugins: [new ExtractTextPlugin({
         filename: '[name].min.css'
     })],
-    //     new webpack.DefinePlugin({
-    //         'process.env': {
-    //           NODE_ENV: NODE_ENV,
-    //         }
-    //     })
-    // ],
+    devServer: {
+      contentBase: paths.build,
+        compress: true,
+        port: 9000,
+        hot: true,
+    },
     watch: false,
+    resolve: {
+        extensions: ['.jsx','.js'],
+        modules: ['node_modules' ,paths.src],
+    },
     watchOptions: {
       aggregateTimeout: 300,
     }

@@ -1,5 +1,12 @@
 body {
   background-color: #aeaeee;
 }
-
-/*# sourceMappingURL=main.min.css.map*/
+.menu-container {
+  background-color: #eeaeee;
+}
+.header-container {
+  background-color: #aeeeee;
+}
+.body-container {
+  background-color: #aeeaaa;
+}
