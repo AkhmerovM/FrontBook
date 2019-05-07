@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {MainContainer} from "./MainModule/containers/MainContainer/index.jsx";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { MainContainer } from './MainModule/containers/MainContainer/index.jsx'
 
-const root = document.querySelector('#root');
+const root = document.querySelector('#root')
 
-ReactDOM.render(<MainContainer />, root);
+ReactDOM.render(<MainContainer />, root)
