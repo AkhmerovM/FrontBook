@@ -2,33 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4eadcd5-1cfa-4726-a31e-e5496a444c29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assetSource/modules/menu/actions/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assetSource/modules/menu/constants/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assetSource/modules/menu/reducers/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/components/Course/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/components/Course/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/components/Post/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/components/Post/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/CourseContainer/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/CourseContainer/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/PostContainer/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/PostContainer/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/BodyModule/actions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/base-api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/BodyModule/constants/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/BodyModule/containers/BodyContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/BodyModule/containers/BodyContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/BodyModule/reducers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/menu-api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/HeaderModule/actions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/body/actions/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/HeaderModule/constants/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/body/constants/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/HeaderModule/containers/HeaderContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/HeaderModule/containers/HeaderContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/HeaderModule/reducers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/body/reducers/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MainModule/actions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/header/actions/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MainModule/constants/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/header/constants/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MainModule/containers/MainContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MainModule/containers/MainContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MainModule/reducers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/header/reducers/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MenuModule/actions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/actions/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MenuModule/constants/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/constants/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MenuModule/containers/MenuContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/menu/containers/MenuContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MenuModule/containers/MenuContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/menu/containers/MenuContainer/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/MenuModule/reducers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/reducers/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/api/base-api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/base-api.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/api/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/www/post.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/api/menu-api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/menu-api.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assetSource/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,24 +30,90 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="538">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="base-api.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/api/base-api.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu-api.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/api/menu-api.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="1" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/CourseContainer/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/PostContainer/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/modules/body/components/Course/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assetSource/modules/body/components/Post/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -63,20 +121,11 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -84,8 +133,17 @@
       <file leaf-file-name=".eslintrc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.eslintrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="45">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/post.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -93,43 +151,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assetSource/modules/menu/containers/MenuContainer/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assetSource/api/index.jsx">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="menu-api.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assetSource/api/menu-api.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base-api.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assetSource/api/base-api.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -174,7 +197,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/www/build/index.html" />
         <option value="$PROJECT_DIR$/assetSource/containers/MainContainer/index.jsx" />
-        <option value="$PROJECT_DIR$/assetSource/index.js" />
         <option value="$PROJECT_DIR$/assetSource/HeaderModule/containers/MainContainer/index.jsx" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/assetSource/MenuModule/containers/MenuContainer/index.jsx" />
@@ -188,10 +210,17 @@
         <option value="$PROJECT_DIR$/assetSource/app.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/assetSource/api/index.jsx" />
-        <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx" />
-        <option value="$PROJECT_DIR$/assetSource/api/menu-api.jsx" />
+        <option value="$PROJECT_DIR$/www/post.json" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/assetSource/api/base-api.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/api/menu-api.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/modules/body/components/Post/index.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/modules/body/components/Course/index.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/modules/body/containers/CourseContainer/index.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/modules/body/containers/PostContainer/index.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/index.js" />
+        <option value="$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx" />
       </list>
     </option>
   </component>
@@ -231,31 +260,127 @@
           <expand>
             <path>
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontBook" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontBook" type="462c0819:PsiDirectoryNode" />
-              <item name="assetSource" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontBook" type="462c0819:PsiDirectoryNode" />
-              <item name="assetSource" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontBook" type="462c0819:PsiDirectoryNode" />
-              <item name="assetSource" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontBook" type="462c0819:PsiDirectoryNode" />
-              <item name="assetSource" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Course" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Post" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BodyContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CourseContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="body" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PostContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MainContainer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -282,19 +407,19 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assetSource/modules/body/components" />
+      <recent name="$PROJECT_DIR$/assetSource/modules/body/containers" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assetSource" />
+      <recent name="$PROJECT_DIR$/node_modules" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assetSource/modules" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assetSource/HeaderModule" />
       <recent name="$PROJECT_DIR$/www/build" />
       <recent name="$PROJECT_DIR$/assetSource" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/assetSource" />
-      <recent name="$PROJECT_DIR$/node_modules" />
-      <recent name="$PROJECT_DIR$/assetSource/reducers" />
-      <recent name="$PROJECT_DIR$/assetSource/containers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,31 +458,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36065000" />
+    <option name="totallyTimeSpent" value="41156000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="25" width="1920" height="984" extended-state="6" />
+    <frame x="-1" y="-11" width="1368" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27427962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24848485" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36192715" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26401445" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27427962" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36192715" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +504,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assetSource/MenuModule/containers/MenuContainer/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/HeaderModule/containers/HeaderContainer/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/BodyModule/containers/BodyContainer/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/MainModule/containers/MainContainer/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -387,9 +552,6 @@
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -446,18 +608,6 @@
     <entry file="file://$PROJECT_DIR$/dist/www/build/build.js" />
     <entry file="file://$PROJECT_DIR$/www/build/main.min.css.map" />
     <entry file="file://$PROJECT_DIR$/www/build/main.js.map" />
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/header/constants/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/header/reducers/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-redux/es/utils/warning.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react/cjs/react.development.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -497,18 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/menu/actions/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/actions/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/actions/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -537,34 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,18 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -598,16 +702,6 @@
           <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/api/index.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/menu/containers/MenuContainer/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,17 +713,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/post.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/api/index.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/api/menu-api.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/api/base-api.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/components/Course/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/CourseContainer/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/PostContainer/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/components/Post/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/BodyContainer/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

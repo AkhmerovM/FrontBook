@@ -1,7 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { MainContainer } from './modules/main/containers/MainContainer/index.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { MainContainer } from './modules/main/containers/MainContainer/index.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
-const root = document.querySelector('#root')
+const root = document.querySelector('#root');
 
-ReactDOM.render(<MainContainer />, root)
+ReactDOM.render(<BrowserRouter>
+    <MainContainer />
+</BrowserRouter>, root);

@@ -1,6 +1,8 @@
-import {BaseApi} from './base-api';
+import { BaseApi } from './base-api';
 
-class menuApi extends BaseApi () {
-  getMenu
-
+class menuApi extends BaseApi() {
+    getMenu () {
+        return this.get('post.json');
+    }
 }
+export { menuApi };

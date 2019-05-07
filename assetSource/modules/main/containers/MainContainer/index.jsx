@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import './style.less'
-import { MenuContainer } from 'modules/menu/containers/MenuContainer/index.jsx'
-import { HeaderContainer } from 'modules/header/containers/HeaderContainer/index.jsx'
-import { BodyContainer } from 'modules/body/containers/BodyContainer/index.jsx'
+import React, { Component } from 'react';
+import './style.less';
+import { MenuContainer } from 'modules/menu/containers/MenuContainer/index.jsx';
+import { HeaderContainer } from 'modules/header/containers/HeaderContainer/index.jsx';
+import { BodyContainer } from 'modules/body/containers/BodyContainer/index.jsx';
 
 class MainContainer extends Component {
     render () {
@@ -18,7 +18,7 @@ class MainContainer extends Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
-export { MainContainer }
+export { MainContainer };
