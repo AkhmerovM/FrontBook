@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './style.less';
-import { menuApi } from 'api/menu-api'
+import { Switch, Route } from 'react-router';
 
-class Post extends Component {
+class PostContainer extends Component {
     componentDidMount () {
-    const response = menuApi.getMenu();
-        // const data = menuApi.getPost();
-        console.log(response);
+        // const response = menuApi.getMenu();
     }
+    // data = menuApi.getPost();
     render () {
         if (!this.data) {
             return null;
@@ -23,4 +22,4 @@ class Post extends Component {
         );
     }
 }
-export { Post };
+export { PostContainer };

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './style.less';
-import {Switch, Route} from 'react-router';
 
 class Course extends Component {
     componentDidMount () {
@@ -8,7 +7,7 @@ class Course extends Component {
     }
     render () {
         return (
-          <span>Course</span>
+            <span>Course</span>
 
         );
     }
