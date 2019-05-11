@@ -6,14 +6,14 @@ import { connect } from 'react-redux';
 function mapStateToProps () {
     return {
 
-    }
+    };
 }
 function mapDispatchToProps () {
     return {
 
     };
 }
-class PostContainerWrapper extends Component {
+class PostContainer extends Component {
     componentDidMount () {
         const response = menuApi.getMenu();
         console.log(response);
@@ -35,5 +35,5 @@ class PostContainerWrapper extends Component {
         );
     }
 }
-const PostContainer = connect(mapStateToProps, mapDispatchToProps)(PostContainerWrapper);
+// const PostContainer = connect(mapStateToProps, mapDispatchToProps)(PostContainerWrapper);
 export { PostContainer };
