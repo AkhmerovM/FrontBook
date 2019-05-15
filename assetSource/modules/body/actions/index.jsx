@@ -7,7 +7,14 @@ const actionSetPostList = (data) => {
         payload: data
     };
 };
-const setPostList = () => {
-    const { data } = bodyApi.getPostList();
-    dispatch(actionSetPostList(data));
+const loadPostList = () => {
+    return async function (dispatch, getState) {
+      const { data, errors } = await bodyApi.getPostList();
+        console.log(data);
+        console.log(actionSetPostList(data));
+        if (!errors) {
+            dispatch(actionSetPostList(data));
+        }
+    };
 };
+export { loadPostList };

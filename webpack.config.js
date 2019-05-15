@@ -1,10 +1,10 @@
-const webpack = require('webpack')
-const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const paths = {
-    build: path.resolve('www/build/'),
-    src: path.resolve('assetSource/')
-}
+    public: path.resolve(__dirname, 'www/'),
+    src: path.resolve(__dirname, 'assetSource/')
+};
 // const isDev = NODE_ENV == 'development';
 // console.log(process.env.NODE_ENV);
 module.exports = {
@@ -13,8 +13,8 @@ module.exports = {
         main: './index.js'
     },
     output: {
-        filename: '[name].js',
-        path: paths.build
+        filename: 'build/[name].js',
+        path: paths.public
     },
     module: {
         rules: [
@@ -34,14 +34,17 @@ module.exports = {
         ]
     },
     plugins: [new ExtractTextPlugin({
-        filename: '[name].min.css'
+        filename: 'build/[name].min.css'
     })],
     devServer: {
-        contentBase: paths.build,
+        contentBase: paths.public,
+        // publicPath: paths.public,
+        historyApiFallback: true,
         compress: true,
-        port: 9000,
+        port: 9001,
         hot: true
     },
+    devtool: 'source-map',
     watch: false,
     resolve: {
         extensions: ['.jsx', '.js'],
@@ -50,4 +53,4 @@ module.exports = {
     watchOptions: {
         aggregateTimeout: 300
     }
-}
+};

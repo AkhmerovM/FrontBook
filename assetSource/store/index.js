@@ -1,29 +1,16 @@
-import { createStore } from 'redux';
-import { actionTypes } from 'modules/body/constants';
+import { compose, createStore, applyMiddleware } from 'redux';
+import reducer from './reducer';
+import thunk from 'redux-thunk';
+import { bodyReducer } from 'modules/body/reducers';
 
-const reducer = (state = initialState, action) => {
-    switch (action.type) {
-    case (actionTypes.setPostList):
-        return {
-            ...state,
-            postList: action.payload
-        };
-    default:
-        return { state };
+export default function initStore () {
+    const reduxCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+    const store = createStore(bodyReducer, reduxCompose(applyMiddleware(thunk)));
+
+    if (module.hot) {
+        module.hot.accept('./reducer.js', () => {
+            store.replaceReducer(reducer);
+        });
     }
-};
-
-const initialState = {
-    data: []
-};
-
-const store = createStore(reducer, initialState);
-
-const actionGet = {
-    type: actionTypes.setPostList,
-    payload: [1, 2, 3, 4, 5, 5, 6, 7]
-};
-
-console.log(store.getState());
-store.dispatch(actionGet);
-console.log(store.getState());
+    return store;
+}

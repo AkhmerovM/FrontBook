@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './style.less';
-import { menuApi } from 'api/menu-api';
 import { connect } from 'react-redux';
+import { loadPostList } from 'modules/body/actions';
 
 function mapStateToProps () {
     return {
@@ -10,20 +10,16 @@ function mapStateToProps () {
 }
 function mapDispatchToProps () {
     return {
-
+        loadPostList
     };
 }
-class PostContainer extends Component {
-    componentDidMount () {
-        const response = menuApi.getMenu();
-        console.log(response);
+class PostContainerWrapper extends Component {
+    constructor (props) {
+        super();
+      props.loadPostList();
     }
-    // data = menuApi.getPost();
     render () {
-        // if (!this.data) {
-        //     return null;
-        // }
-        const title = '';
+      const title = '';
         const text = '';
         return (
             <div className='post'>
@@ -35,5 +31,5 @@ class PostContainer extends Component {
         );
     }
 }
-// const PostContainer = connect(mapStateToProps, mapDispatchToProps)(PostContainerWrapper);
+const PostContainer = connect(mapStateToProps, mapDispatchToProps())(PostContainerWrapper);
 export { PostContainer };

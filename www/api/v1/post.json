@@ -1,12 +1,18 @@
 {
-    data: {
-        list: [
+    "data": {
+        "list": [
             {
-                id: 0,
-                title: first,
-                text: 'sdklj fkldfgkld fglkdfsg jklsd fgjkldfj gklfdj gdf klgjdflkgj dflkgjdfk lgjsdfklgj'
+                "id": 0,
+                "title": "first",
+                "text": "43243434324324 fkldfgkld fglkdfsg jklsd fgjkldfj gklfdj gdf klgjdflkgj dflkgjdfk lgjsdfklgj"
+            },
+            {
+                "id": 1,
+                "title": "second",
+                "text": "sdklj fkldfgkld fglkdfsg jklsd fgjkldfj gklfdj gdf klgjdflkgj dflkgjdfk lgjsdfklgj"
             }
 
         ]
-    }
+    },
+    "errors": []
 }
