@@ -5,7 +5,7 @@ import { bodyReducer } from 'modules/body/reducers';
 
 export default function initStore () {
     const reduxCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-    const store = createStore(bodyReducer, reduxCompose(applyMiddleware(thunk)));
+    const store = createStore(reducer, reduxCompose(applyMiddleware(thunk)));
 
     if (module.hot) {
         module.hot.accept('./reducer.js', () => {

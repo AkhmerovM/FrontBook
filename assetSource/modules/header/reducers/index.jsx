@@ -1,13 +1,13 @@
-import { actionTypes } from 'modules/body/constants';
+import { actionHeaderTypes } from 'modules/header/constants';
 
-const headerReducer = (state, action) => {
+const headerReducer = (state = {}, action) => {
     switch (action.type) {
-    case (actionTypes.setPostList):
+    case (actionHeaderTypes.setPostList):
         return {
             ...state,
             postList: action.payload
         };
-    default: return {state};
+    default: return { state };
     }
 };
 export { headerReducer };

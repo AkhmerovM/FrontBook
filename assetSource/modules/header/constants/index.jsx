@@ -1,6 +1,6 @@
 const headerModuleName = 'HEADER_MODULE';
 
-const actionTypes = {
+const actionHeaderTypes = {
     setPostList: 'HEADER_SET_POST_LIST'
 };
-export { actionTypes, headerModuleName };
+export { actionHeaderTypes, headerModuleName };

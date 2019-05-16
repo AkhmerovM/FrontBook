@@ -6,23 +6,37 @@ import { Course } from 'modules/body/components/Course';
 import { CourseContainer } from 'modules/body/containers/CourseContainer';
 import { PostContainer } from 'modules/body/containers/PostContainer';
 import { PostListContainer } from 'modules/body/containers/PostListContainer';
+import { selectPostData } from 'modules/body/selectors';
+import { loadPostList } from 'modules/body/actions';
+import { connect } from 'react-redux';
 
-class BodyContainer extends Component {
+function mapStateToProps (state) {
+    return {
+        // postData: selectPostData(state)
+    };
+}
+function mapDispatchToProps () {
+    return {
+        loadPostList
+    };
+}
+class BodyContainerWrapper extends Component {
     componentDidMount () {
-        // const response = menuApi.getMenu();
+        this.props.loadPostList();
     }
     render () {
         return (
             <div className='body-container'>
                 <Switch>
-                    <Route component={CourseContainer} path='/courses' />
-                    <Route component={PostListContainer} path='/posts' />
-                    <Route component={Course} path='/courses/:id' />
-                    <Route component={Post} exact path='/post/:id' />
-                    <Route component={PostContainer} exact path='/' />
+                    <Route component={CourseContainer} exact path='/course' />
+                    <Route component={PostListContainer} exact path='/post' />
+                    <Route component={Course} exact path='/course/:id' />
+                    <Route component={PostContainer} exact path='/post/:id' />
+                    <Route component={PostListContainer} exact path='/' />
                 </Switch>
             </div>
         );
     }
 }
+const BodyContainer = connect(mapStateToProps, mapDispatchToProps())(BodyContainerWrapper);
 export { BodyContainer };

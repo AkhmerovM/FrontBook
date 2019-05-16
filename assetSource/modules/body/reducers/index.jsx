@@ -1,15 +1,24 @@
-import { actionTypes } from 'modules/body/constants';
+import { actionBodyTypes } from 'modules/body/constants';
 
-const bodyReducer = (state, action) => {
-    console.log(action.type);
+const initialState = {
+    post: {
+        data: {}
+    }
+};
+
+const bodyReducer = (state = initialState, action) => {
     switch (action.type) {
-    case (actionTypes.setPostList):
-        console.log('asd');
+    case (actionBodyTypes.setPostList):
         return {
             ...state,
-            postList: action.payload
+            post: {
+                ...state.post,
+                data: {
+                    ...action.payload
+                }
+            }
         };
-    default: return { state };
+    default: return { ...state };
     }
 };
 export { bodyReducer };

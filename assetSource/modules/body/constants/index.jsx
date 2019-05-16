@@ -1,6 +1,7 @@
 const bodyModuleName = 'BODY_MODULE';
 
-const actionTypes = {
+const actionBodyTypes = {
+    setClick: 'BODY_SET_CLICK',
     setPostList: 'BODY_SET_POST_LIST'
 };
-export { actionTypes, bodyModuleName };
+export { actionBodyTypes, bodyModuleName };
