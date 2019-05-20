@@ -14,25 +14,11 @@ function mapDispatchToProps () {
         loadPostList
     };
 }
-const config = [
-    { name: 'postList', url: 'post' },
-    { name: 'courseList', url: 'course' }
-];
 class MenuContainerWrapper extends Component {
     render () {
         return (
             <div className='menu-container'>
-                <div className="menu__list">
-                    {config.map((item) => {
-                        return (
-                            <Link to={`/${item.url}`}>
-                                <div className="menu__item">
-                                    {item.name}
-                                </div>
-                            </Link>
-                        );
-                    })}
-                </div>
+
             </div>
         );
     }
