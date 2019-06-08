@@ -24,6 +24,10 @@ module.exports = {
                 exclude: '/node_modules'
             },
             {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            },
+            {
                 test: /\.less$/,
                 exclude: '/node_modules',
                 use: ExtractTextPlugin.extract({

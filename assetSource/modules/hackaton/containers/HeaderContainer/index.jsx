@@ -1,0 +1,42 @@
+import React, { Component } from 'react';
+import './style.less';
+import { Link } from 'react-router-dom';
+import { LogoPng } from 'modules/hackaton/components/Logo';
+
+const config = [
+    { id: '1', name: 'Потеряшки', url: '/info/lose' },
+    { id: '2', name: 'Поисковики', url: '/info/search' }
+];
+
+class HeaderContainer extends Component {
+    render () {
+        return (
+            <div className='header-container'>
+                <div className='header-container__left'>
+                    <div className="header-container__logo">
+                        <Link key={40} to={`/`}>
+                            <LogoPng />
+                        </Link>
+                    </div>
+                    <div className="menu">
+                        {config.map((item) => {
+                            return (
+                                <Link key={item.id} to={`/${item.url}`}>
+                                    <div className="menu__item">
+                                        {item.name}
+                                    </div>
+                                </Link>
+                            );
+                        })}
+                    </div>
+                </div>
+                <div className='menu__registration'>
+                    <Link key={3} to={`/info/registration`}>
+                        <div className="menu__item">Регистрация</div>
+                    </Link>
+                </div>
+            </div>
+        );
+    }
+}
+export { HeaderContainer };

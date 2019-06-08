@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './style.less';
-import { MenuContainer } from 'modules/menu/containers/MenuContainer/index.jsx';
-import { HeaderContainer } from 'modules/header/containers/HeaderContainer/index.jsx';
-import { BodyContainer } from 'modules/body/containers/BodyContainer/index.jsx';
-
+import { BodyContainer } from 'modules/hackaton/containers/BodyContainer';
+import { HeaderContainer } from 'modules/hackaton/containers/HeaderContainer';
 class MainContainer extends Component {
     render () {
         return (
@@ -13,7 +11,6 @@ class MainContainer extends Component {
                         <HeaderContainer/>
                     </div>
                     <div className="main__body">
-                        <MenuContainer/>
                         <BodyContainer/>
                     </div>
                 </div>

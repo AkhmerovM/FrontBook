@@ -1,10 +1,7 @@
-import { bodyReducer } from 'modules/body/reducers';
-import { headerReducer } from 'modules/header/reducers';
+import { bodyReducer } from 'modules/hackaton/reducers';
 import { combineReducers } from 'redux';
-import { bodyModuleName } from 'modules/body/constants';
-import { headerModuleName } from 'modules/header/constants';
+import { bodyModuleName } from 'modules/hackaton/constants';
 
 export default combineReducers({
-    [bodyModuleName]: bodyReducer,
-    [headerModuleName]: headerReducer
+    [bodyModuleName]: bodyReducer
 });

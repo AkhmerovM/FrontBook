@@ -6,6 +6,9 @@ html {
 body {
   background-color: #aeaeee;
 }
+a {
+  text-decoration: none;
+}
 #root {
   height: 100vh;
 }
@@ -21,37 +24,37 @@ body {
   display: flex;
   height: 100%;
 }
-.menu-container {
-  background-color: #eeaeee;
-  flex: 2;
+.body-container {
+  background-color: #aeeaaa;
+  flex: 7;
+  height: 100%;
+}
+.body-container {
+  background-color: #aeeaaa;
+  flex: 7;
   height: 100%;
 }
 .header-container {
   min-height: 100px;
   background-color: #aeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.body-container {
-  background-color: #aeeaaa;
-  flex: 7;
-  height: 100%;
+.header-container__left {
+  display: flex;
 }
-.body-container {
-  background-color: #aeeaaa;
-  flex: 7;
-  height: 100%;
+.header-container__logo {
+  font-size: 30px;
+  margin: 0 30px;
 }
-.body-container {
-  background-color: #aeeaaa;
-  flex: 7;
-  height: 100%;
+.menu {
+  display: flex;
 }
-.body-container {
-  background-color: #aeeaaa;
-  flex: 7;
-  height: 100%;
+.menu__item {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 20px;
 }
-.body-container {
-  background-color: #aeeaaa;
-  flex: 7;
-  height: 100%;
-}
+
+/*# sourceMappingURL=main.min.css.map*/
