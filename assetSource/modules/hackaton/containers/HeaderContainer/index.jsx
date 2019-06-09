@@ -28,6 +28,7 @@ class HeaderContainer extends Component {
                                 </Link>
                             );
                         })}
+                        <div className="menu__item"><a style={{ color: '#fff' }} href='/search/yapi-map.html'>Карта Поиска</a></div>
                     </div>
                 </div>
                 <div className='menu__registration'>

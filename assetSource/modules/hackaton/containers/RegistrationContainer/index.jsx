@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style.less';
 import { connect } from 'react-redux';
 import { Button, Col, Form } from 'react-bootstrap';
+import { BoxButton } from 'modules/hackaton/components/BoxButton';
 
 function mapStateToProps (state) {
     return {
@@ -17,20 +18,25 @@ class Registration extends Component {
     render () {
         return (
             <Form>
-                <Form.Row>
-                    <Col>
-                        <Form.Label>LAl</Form.Label>
-                    </Col>
-                    <Col>
-                        <Form.Control placeholder="First name" />
-                    </Col>
-                    <Col>
-                        <Form.Control placeholder="Last name" />
-                    </Col>
-                </Form.Row>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
+                <div className="login">
+                    <Form.Row>
+                        <Form.Label><div className="login__label">
+                          Логин
+                        </div></Form.Label>
+                        <Form.Control placeholder="логин" />
+                    </Form.Row>
+                    <Form.Row>
+                        <Form.Label><div className="login__label">
+                          Пароль
+                        </div></Form.Label>
+                        <Form.Control placeholder="Пароль" />
+                    </Form.Row>
+                    <span style={{ padding: '10px 10px' }}>
+                        <BoxButton>Отмена</BoxButton>
+                    </span><span style={{ padding: '10px 10px' }}>
+                        <BoxButton color='orange'>Регистрация</BoxButton>
+                    </span>
+                </div>
             </Form>
 
         );

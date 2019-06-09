@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Search map</title>
+    <meta name="mapview" content="initial-scale=1.0, user-scalable=no, maximum-scale=1"/>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0efee400-bde0-4e33-a70f-e85531657355&lang=ru_RU"
+            type="text/javascript">
+    </script>
+    <script src="map-interface.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body style="padding: 20px">
+    <a style="padding: 5px 10px; cursor: pointer; background-color: #aeaeee; border: 1px solid #000; margin: 10px; text-decoration: none; border-radius: 4px" href="/">Назад</a>
+    <h1>Карта поисковых работ</h1>
+    <div id="contents" style="position: relative">
+      <div id="mapHolder">
+        <div id="WorkArea">
+          <div id="YMapsView"></div>
+          <div id="SearchWindow" style="position: absolute">
+            <h2>Поиск</h2>
+            Номер квадрата: <span id="squareId"></span></br>
+            Ищут в квадрате: <span id="numSearchers"></span></br>
+            <span id="listSearchers"></span></br>
+          </div>
+          <div id="ActionWindow" style="position: absolute">
+            <div>
+              <img id='photo' src='photo.png'></img>
+              <div class="name">Иванова Наталья Ивановна</div>
+              <div class="notFound">Не найдена</div>
+              <div class="leftAligned">
+                Номер квадрата: <span id="selectSquareId"></span></br>
+                Ищут в квадрате: <span id="selectNumSearchers"></span></br>
+              </div>
+              <div class="buttons">
+                <input type="image" onclick="selectSquare()" src="search.png"></input>
+                <input type="image" onclick="closeSelectSquare()" src="cancel.png"></input>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="card">
+        <h2>Карточка поиска</h2>
+        Номер квадрата: <span id="cardSquareId"></span></br>
+        <img class='photo' src='photo.png'></img>
+        Ищут:
+        <span id="selectListSearchers"></span></br>
+        <div class="buttons">
+          <input style="height:33px" type="image" onclick="exitSearch()" src="exit.png"></input>
+          <input style="height:33px" type="image" onclick="exitSearch()" src="found.png"></input>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="left" style="float: left">
+        <table class="card">
+          <tr>
+            <td>ID</td>
+            <td>Был одет</td>
+          </tr>
+          <tr>
+            <td>Имя</td>
+            <td>Головной убор</td>
+          </tr>
+          <tr>
+            <td>Фамилия</td>
+            <td>Верх</td>
+          </tr>
+          <tr>
+            <td>Отчество</td>
+            <td>Низ</td>
+          </tr>
+          <tr>
+            <td>Дата рождения</td>
+            <td>Обувь</td>
+          </tr>
+          <tr>
+            <td>Рост</td>
+            <td>Особые приметы</td>
+          </tr>
+          <tr>
+            <td>Цвет волос</td>
+            <td>Болезни</td>
+          </tr>
+          <tr>
+            <td>Дата исчезновения</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan='2'>
+              <div>Комментарий</div>
+              <div></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="right" style="float: right">
+        <div id="chat">
+          <b>Иванов Иван&gt;</b> Чмоки всем в этом чати!</br>
+          <b>Степанов Степан&gt;</b> Даров, как погода?</br>
+          <b>Александров Александр&gt;</b> И вам не хворать!</br>
+        </div>
+        <textarea onkeypress="submitText(event)" id="chatWindow" style="width: 90%; height: 20%"></textarea>
+      </div>
+    </div>
+  </body>
+</html>

@@ -3,6 +3,9 @@ import { actionBodyTypes } from 'modules/hackaton/constants';
 const initialState = {
     post: {
         data: {}
+    },
+    people: {
+        data: []
     }
 };
 
@@ -18,15 +21,15 @@ const bodyReducer = (state = initialState, action) => {
                 }
             }
         };
-      case (actionBodyTypes.setPeopleList):
+    case (actionBodyTypes.setPeopleList):
         return {
-          ...state,
-          people: {
-            ...state.post,
-            data: {
-              ...action.payload
+            ...state,
+            people: {
+                ...state.post,
+                data: [
+                    ...action.payload
+                ]
             }
-          }
         };
     default: return { ...state };
     }

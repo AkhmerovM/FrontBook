@@ -1,7 +1,21 @@
 .lose-container {
+    background-color: #c9c9c9;
     &__data {
         display: flex;
         padding: 30px;
+        font-family: highliner;
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+    &__fio {
+        text-transform: uppercase;
+        font-family: highliner;
+        text-align: center;
+    }
+    &__find {
+        text-transform: uppercase;
+        font-family: highliner;
+        text-align: center;
     }
     &__photo {
         flex: 2;
@@ -19,10 +33,10 @@
         border-radius: 10px;
     }
     &__form-data {
-        display: flex;
     }
     &__row {
         width: 50%;
+        display: inline-block;
     }
     &__name {
         font-family: 'highliner';
@@ -36,5 +50,19 @@
     }
     &__name {
 
+    }
+    &__search {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+}
+.card {
+    tr {
+        display: flex;
+        td {
+            flex: 1;
+            height: 70px;
+        }
     }
 }

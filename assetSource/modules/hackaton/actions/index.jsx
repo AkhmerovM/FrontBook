@@ -24,9 +24,9 @@ const loadPostList = () => {
 };
 const getPeople = () => {
     return async function (dispatch, getState) {
-        const data= await bodyApi.getPeople();
-      console.log(data);
-      dispatch(actionSetPeopleList(data));
+        const data = await bodyApi.getPeople();
+        console.log(data);
+        dispatch(actionSetPeopleList(data));
     };
 };
 

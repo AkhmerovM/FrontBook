@@ -108,6 +108,9 @@ class MainPage extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='main-page__footer' >
+                    <img className="main-page__footer-img" src="/img/footer.png" alt="" />
+                </div>
             </div>
         );
     }
