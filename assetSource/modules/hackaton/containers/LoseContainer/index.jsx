@@ -39,32 +39,32 @@ class Lose extends Component {
                     <div className="lose-container__form-data">
                         <table className="card">
                             <tr>
-                                <td>ID</td> <td>{human.id}</td>
-                                <td>Телефон</td><td>{human.phone}</td>
+                                <td>ID</td> <td className='card__value'>{human.id}</td>
+                                <td>Телефон</td><td className='card__value'>{human.phone}</td>
                             </tr>
                             <tr>
-                                <td>Имя</td><td>{human.lastName}</td>
-                                <td>Головной убор</td><td>{human.headdress}</td>
+                                <td>Имя</td><td className='card__value'>{human.lastName}</td>
+                                <td>Головной убор</td><td className='card__value'>{human.headdress}</td>
                             </tr>
                             <tr>
-                                <td>Фамилия</td><td>{human.firstName}</td>
-                                <td>Верх</td><td>{human.clothesH}</td>
+                                <td>Фамилия</td><td className='card__value'>{human.firstName}</td>
+                                <td>Верх</td><td className='card__value'>{human.clothesH}</td>
                             </tr>
                             <tr>
-                                <td>Дата рождения</td><td>{human.bornDate}</td>
-                                <td>Обувь</td><td>{human.$clothesD}</td>
+                                <td>Дата рождения</td><td className='card__value'>{human.bornDate}</td>
+                                <td>Обувь</td><td className='card__value'>{human.$clothesD}</td>
                             </tr>
                             <tr>
-                                <td>Рост</td><td>{human.height}</td>
-                                <td>Особые приметы</td><td>{human.comment}</td>
+                                <td>Рост</td><td className='card__value'>{human.height}</td>
+                                <td>Особые приметы</td><td className='card__value'>{human.comment}</td>
                             </tr>
                             <tr>
-                                <td>Цвет волос</td><td>{human.hairColor}</td>
-                                <td>Болезни</td><td>{human.illness}</td>
+                                <td>Цвет волос</td><td className='card__value'>{human.hairColor}</td>
+                                <td>Болезни</td><td className='card__value'>{human.illness}</td>
                             </tr>
                             <tr>
-                                <td>Дата исчезновения</td><td>{human.lostDate}</td>
-                                <td>Цвет глаз</td><td>{human.eyesColor}</td>
+                                <td>Дата исчезновения</td><td className='card__value'>{human.lostDate}</td>
+                                <td>Цвет глаз</td><td className='card__value'>{human.eyesColor}</td>
                             </tr>
                             <tr>
                                 <td colSpan='2'>

@@ -3,9 +3,21 @@ function getTrajectoryData(searchId) {
 }
 
 function removeSelectedSquare() {
+  var http = new XMLHttpRequest();
+  var url = "http://localhost:8080/squares";
+  var params = "questId="+document.searchId;
+  http.open('DELETE', url, true);
+  http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  http.send(params);
 }
 
 function setSelectedSquare(squareId) {
+  var http = new XMLHttpRequest();
+  var url = "http://localhost:8080/squares";
+  var params = "number="+squareId+"&questId="+document.searchId;
+  http.open('POST', url, true);
+  http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  http.send(params);
 }
 
 function getMyself() {
@@ -17,12 +29,84 @@ function getMyself() {
   };
 }
 
-function getSearchCard(searchId) {
-  return {
-    lostLat: 56.49,
-    lostLon: 84.97,
-    lostHoursAgo: 2
-  };
+function fillIn(name, value) {
+  var field = document.getElementById(name);
+  field.innerHTML = value;
+}
+
+function updateSearchCard(card) {
+  fillIn('firstName', card.firstName);
+  fillIn('dressHat', card.dressHat);
+  fillIn('lastName', card.lastName);
+  fillIn('dressTop', card.dressTop);
+  fillIn('patronimicName', card.patronimicName);
+  fillIn('dressBottom', card.dressBottom);
+  fillIn('birthDate', card.birthDate);
+  fillIn('dressShoes', card.dressShoes);
+  fillIn('height', card.height);
+  fillIn('specialMarks', card.specialMarks);
+  fillIn('hairColor', card.hairColor);
+  fillIn('desease', card.desease);
+  fillIn('eyesColor', card.eyesColor);
+  fillIn('lostDate', card.lostDate);
+  fillIn('commentText', card.comment);
+}
+
+function getSearchCard(searchId, callback) {
+  var http = new XMLHttpRequest();
+  var url = "http://localhost:8080/quest?questId="+document.searchId;
+  http.open('GET', url);
+  http.send(params);
+  http.onreadystatechange = function() {
+    if(http.readyState == 4 && http.status == 200) {
+      var json = JSON.parse(http.responseText);
+      document.card = {
+        lostLat: 56.49,
+        lostLon: 84.97,
+        lostHoursAgo: 2,
+        id: 0,
+        firstName: json.firstName,
+        lastName: json.lastName,
+        patronimicName: json.secondName,
+        dressHat: json.headdress,
+        dressTop: json.clothesH,
+        dressBottom: json.clothesM,
+        dressShoes: json.clothesD,
+        height: json.height,
+        hairColor: json.hairColor,
+        eyesColor: json.eyesColor,
+        desease: json.illness,
+        lostDate: json.lostDate,
+        comment: json.comment
+      };
+    }
+    if(document.card == undefined) {
+      document.card = {
+        lostLat: 56.49,
+        lostLon: 84.97,
+        lostHoursAgo: 2,
+        id: 0,
+        firstName: 'Наталья',
+        lastName: 'Иванова',
+        patronimicName: 'Ивановна',
+        dressHat: 'Нет',
+        dressTop: 'Чёрный',
+        dressBottom: 'Белый',
+        dressShoes: 'Кроссовки',
+        height: '173',
+        hairColor: 'Светлый',
+        desease: 'Нет',
+        lostDate: '23.03.2019',
+        birthDate: '21.01.1992',
+        specialMarks: '&nbsp;',
+        comment: '&nbsp;'
+      };
+    }
+    updateSearchCard(document.card);
+    callback();
+  }
+
+  return;
 }
 
 function getSquareData(searchId) {
@@ -269,12 +353,13 @@ ymaps.ready(function () {
   getMyself();
   document.searchId = params['searchId'];
   document.map = map;
-  document.card = getSearchCard(document.searchId);
-  var area = getArea(document.card.lostLat, document.card.lostLon, 5000 * document.card.lostHoursAgo);
-  document.area = area;
-  zone(map, area.startLat, area.startLon, area.endLat, area.endLon, 2000);
-  var coords = [[area.startLat, area.startLon], [area.endLat, area.endLon]];
-  document.map.setBounds(coords);
+  getSearchCard(document.searchId, function() {
+    var area = getArea(document.card.lostLat, document.card.lostLon, 5000 * document.card.lostHoursAgo);
+    document.area = area;
+    zone(map, area.startLat, area.startLon, area.endLat, area.endLon, 2000);
+    var coords = [[area.startLat, area.startLon], [area.endLat, area.endLon]];
+    document.map.setBounds(coords);
+  });
 });
 
 function getParameters() {

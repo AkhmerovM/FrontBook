@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { LogoPng } from 'modules/hackaton/components/Logo';
 
 const config = [
-    { id: '1', name: 'Потеряшки', url: 'info/lose' },
-    { id: '2', name: 'Поисковики', url: 'info/search' }
+    { id: '1', name: 'Список пропавших', url: 'info/lose' },
+    { id: '2', name: 'Список найденных', url: 'info/search' }
 ];
 
 class HeaderContainer extends Component {

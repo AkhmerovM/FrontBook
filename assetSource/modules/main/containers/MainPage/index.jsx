@@ -34,7 +34,7 @@ class MainPage extends Component {
                         <Link key={50} to='#'>
                             <BoxButton>Стать волонтером</BoxButton>
                         </Link>
-                        <Link key={60} to='#'>
+                        <Link key={60} to='/info/lose'>
                             <BoxButton>Сообщить о пропавшем</BoxButton>
                         </Link>
                         <Link key={70} to='#'>
