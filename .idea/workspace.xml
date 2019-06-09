@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4eadcd5-1cfa-4726-a31e-e5496a444c29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assetSource/style/fonts/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/fonts/Roboto-Regular.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/api/base-api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/base-api.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/search/map-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/search/map-interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/search/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/search/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/search/yapi-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/search/yapi-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,13 +90,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/search/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="232" column="11" selection-start-line="232" selection-start-column="11" selection-end-line="232" selection-end-column="11" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Roboto-Regular.ttf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/fonts/Roboto-Regular.ttf">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
@@ -137,7 +137,7 @@
       <file leaf-file-name="main.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/build/main.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="298">
               <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
@@ -146,7 +146,7 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="465">
               <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -155,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+            <state relative-caret-position="172">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -205,8 +205,8 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="54" column="68" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+            <state relative-caret-position="58">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -217,8 +217,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            <state relative-caret-position="148">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -239,8 +239,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+            <state relative-caret-position="208">
+              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -262,8 +262,8 @@
       <file leaf-file-name="base-api.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/api/base-api.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="165">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -411,23 +411,23 @@
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/constants/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/selectors/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/BodyContainer/index.jsx" />
-        <option value="$PROJECT_DIR$/assetSource/api/base-api.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/actions/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/api/body-api.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/reducers/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/components/BoxButton/style.less" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/BodyContainer/style.less" />
-        <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/RegistrationContainer/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/RegistrationContainer/style.less" />
         <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/index.jsx" />
-        <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/style.less" />
-        <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" />
         <option value="$PROJECT_DIR$/www/search/yapi-map.html" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/style.less" />
+        <option value="$PROJECT_DIR$/assetSource/api/base-api.jsx" />
+        <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" />
         <option value="$PROJECT_DIR$/www/search/styles.css" />
+        <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" />
+        <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" />
       </list>
     </option>
   </component>
@@ -474,6 +474,12 @@
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
               <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assetSource" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
@@ -560,6 +566,12 @@
               <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
               <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FrontBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontBook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="search" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -594,11 +606,11 @@
       <recent name="$PROJECT_DIR$/assetSource/modules" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/fonts" />
       <recent name="$PROJECT_DIR$/www/search" />
       <recent name="$PROJECT_DIR$/assetSource/style/fonts" />
       <recent name="$PROJECT_DIR$/www/img" />
       <recent name="$PROJECT_DIR$/assetSource/modules/hackaton/containers" />
-      <recent name="$PROJECT_DIR$/assetSource" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -649,12 +661,12 @@
       <workItem from="1557917489991" duration="11409000" />
       <workItem from="1558008204420" duration="14810000" />
       <workItem from="1559979096772" duration="27036000" />
-      <workItem from="1560010540514" duration="19723000" />
+      <workItem from="1560010540514" duration="21148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151733000" />
+    <option name="totallyTimeSpent" value="153158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="709" extended-state="6" />
@@ -665,8 +677,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36166364" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.24318182" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36166364" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.24318182" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
@@ -688,7 +700,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/containers/PostListContainer/style.less" />
     <entry file="file://$PROJECT_DIR$/assetSource/modules/body/components/PostPreview/style.less" />
     <entry file="file://$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/index.jsx" />
     <entry file="file://$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/style.less" />
@@ -771,13 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/build/main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -889,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/api/base-api.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/api/body-api.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -951,13 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/BodyContainer/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-121">
@@ -985,16 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
@@ -1007,30 +987,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/style/fonts/Roboto-Regular.ttf">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="54" column="68" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assetSource/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/search/yapi-map.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1050,10 +1006,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/api/base-api.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/fonts/Roboto-Regular.ttf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/build/main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/search/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="232" column="11" selection-start-line="232" selection-start-column="11" selection-end-line="232" selection-end-column="11" />
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>

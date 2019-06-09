@@ -66,12 +66,6 @@ class Lose extends Component {
                                 <td>Дата исчезновения</td><td className='card__value'>{human.lostDate}</td>
                                 <td>Цвет глаз</td><td className='card__value'>{human.eyesColor}</td>
                             </tr>
-                            <tr>
-                                <td colSpan='2'>
-                                    <div>Комментарий</div>
-                                    <div>{}</div>
-                                </td>
-                            </tr>
                         </table>
                         <div className="lose-container__search">
                             <a style={{ color: '#fff' }} href='/search/yapi-map.html'>
