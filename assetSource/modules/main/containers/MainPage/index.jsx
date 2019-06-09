@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './style.less';
 import { LogoPng } from 'modules/hackaton/components/Logo';
-import { RegistrationPng } from 'modules/hackaton/components/Registration';
-import { EnterPng } from 'modules/hackaton/components/Enter';
 import { Link } from 'react-router-dom';
-import { VolonteerPng } from 'modules/hackaton/components/BeVolonteer';
-import { ReportLosePng } from 'modules/hackaton/components/ReportLose';
-import { ReportFoundPng } from 'modules/hackaton/components/ReportFound';
 import { BoxButton } from 'modules/hackaton/components/BoxButton';
 class MainPage extends Component {
     render () {
@@ -97,22 +92,22 @@ class MainPage extends Component {
                 </div>
 
                 <div className="main-page__margin">
-                <div className="main-page__volon">
-                    <img className="main-page__volon-img" src="img/loseBoy.jpg" alt="" />
-                    <div className="main-page__volon-name">Что делать если вы нашли человека</div>
-                    <div className="main-page__volon-data">
-                        <div className="main-page__volon-text">
+                    <div className="main-page__volon">
+                        <img className="main-page__volon-img" src="img/loseBoy.jpg" alt="" />
+                        <div className="main-page__volon-name">Что делать если вы нашли человека</div>
+                        <div className="main-page__volon-data">
+                            <div className="main-page__volon-text">
                             Сервис «Волонтер в Томске» предназначен для поиска пропавших людей волонтерами. Теперь не нужно собирать группу и распределять людей по квадратам поиска — сервис делает это за вас, и таким образом облегчает процесс.
-                        </div>
-                        <div>
-                            <Link key={70} to={`#`}>
+                            </div>
+                            <div>
+                                <Link key={70} to={`#`}>
 
-                                <BoxButton>сообщить о найденном</BoxButton>
-                            </Link>
+                                    <BoxButton>сообщить о найденном</BoxButton>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         );
     }

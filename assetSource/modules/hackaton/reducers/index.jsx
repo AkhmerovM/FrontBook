@@ -18,6 +18,16 @@ const bodyReducer = (state = initialState, action) => {
                 }
             }
         };
+      case (actionBodyTypes.setPeopleList):
+        return {
+          ...state,
+          people: {
+            ...state.post,
+            data: {
+              ...action.payload
+            }
+          }
+        };
     default: return { ...state };
     }
 };
