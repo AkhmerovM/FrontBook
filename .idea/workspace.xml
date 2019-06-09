@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4eadcd5-1cfa-4726-a31e-e5496a444c29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/www/fonts/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/search/boy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/api/base-api.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/api/base-api.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/search/map-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/search/map-interface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/search/yapi-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/search/yapi-map.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="538">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="194">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/store/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -155,7 +153,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
@@ -223,14 +221,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yapi-map.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="yapi-map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/search/yapi-map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#8;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4608#4614#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map-interface.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/search/map-interface.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-164">
+              <caret line="233" column="18" selection-start-line="233" selection-start-column="18" selection-end-line="233" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -340,9 +352,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sty</find>
-      <find>exports</find>
-      <find>de</find>
       <find>dev</find>
       <find>c</find>
       <find>Container</find>
@@ -366,9 +375,13 @@
       <find>body-container</find>
       <find>createCORSRequest</find>
       <find>.body-c</find>
-      <find>margin</find>
       <find>td&gt;{</find>
       <find>midd</find>
+      <find>margin</find>
+      <find>наталь</find>
+      <find>На</find>
+      <find>Ната</find>
+      <find>pho</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -377,7 +390,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assetSource/modules/menu/containers/MenuContainer/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainContainer/style.less" />
         <option value="$PROJECT_DIR$/assetSource/modules/menu/containers/MenuContainer/style.less" />
         <option value="$PROJECT_DIR$/www/api/v1/post.json" />
@@ -421,13 +433,14 @@
         <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/index.jsx" />
         <option value="$PROJECT_DIR$/assetSource/style.less" />
-        <option value="$PROJECT_DIR$/www/search/yapi-map.html" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/style.less" />
         <option value="$PROJECT_DIR$/assetSource/api/base-api.jsx" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/index.jsx" />
         <option value="$PROJECT_DIR$/www/search/styles.css" />
         <option value="$PROJECT_DIR$/assetSource/modules/hackaton/containers/LoseContainer/style.less" />
         <option value="$PROJECT_DIR$/assetSource/modules/main/containers/MainPage/style.less" />
+        <option value="$PROJECT_DIR$/www/search/map-interface.js" />
+        <option value="$PROJECT_DIR$/www/search/yapi-map.html" />
       </list>
     </option>
   </component>
@@ -606,8 +619,8 @@
       <recent name="$PROJECT_DIR$/assetSource/modules" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/www/fonts" />
       <recent name="$PROJECT_DIR$/www/search" />
+      <recent name="$PROJECT_DIR$/www/fonts" />
       <recent name="$PROJECT_DIR$/assetSource/style/fonts" />
       <recent name="$PROJECT_DIR$/www/img" />
       <recent name="$PROJECT_DIR$/assetSource/modules/hackaton/containers" />
@@ -661,12 +674,12 @@
       <workItem from="1557917489991" duration="11409000" />
       <workItem from="1558008204420" duration="14810000" />
       <workItem from="1559979096772" duration="27036000" />
-      <workItem from="1560010540514" duration="21148000" />
+      <workItem from="1560010540514" duration="22111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153158000" />
+    <option name="totallyTimeSpent" value="154121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="709" extended-state="6" />
@@ -677,8 +690,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36166364" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.24318182" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37974682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.25833333" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
@@ -700,7 +713,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assetSource/modules/body/components/PostPreview/style.less" />
     <entry file="file://$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/index.jsx" />
     <entry file="file://$PROJECT_DIR$/assetSource/modules/header/containers/HeaderContainer/style.less" />
     <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/PostContainer/index.jsx">
@@ -988,17 +1000,6 @@
     <entry file="file://$PROJECT_DIR$/assetSource/style/fonts/Roboto-Regular.ttf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/search/yapi-map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assetSource/modules/hackaton/containers/HeaderContainer/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -1068,6 +1069,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/search/map-interface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="233" column="18" selection-start-line="233" selection-start-column="18" selection-end-line="233" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/search/yapi-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#8;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4608#4614#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

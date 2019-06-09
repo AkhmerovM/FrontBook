@@ -23,9 +23,9 @@
           </div>
           <div id="ActionWindow" style="position: absolute">
             <div>
-              <img id='photo' src='photo.png'></img>
-              <div class="name">Иванова Наталья Ивановна</div>
-              <div class="notFound">Не найдена</div>
+              <img id='photo' src='boy.png'></img>
+              <div class="name">Кривцов Константин</div>
+              <div class="notFound">Не найден</div>
               <div class="leftAligned">
                 Номер квадрата: <span id="selectSquareId"></span></br>
                 Ищут в квадрате: <span id="selectNumSearchers"></span></br>
@@ -41,9 +41,9 @@
       <div id="card">
         <h2>Карточка поиска</h2>
         Номер квадрата: <span id="cardSquareId"></span></br>
-        <img class='photo' src='photo.png'></img>
+        <img class='photo' src='boy.png'></img>
         Ищут:
-        <span id="selectListSearchers"></span></br>
+        <span id="selectListSearchers"> Кривцов Константин</span></br>
         <div class="buttons">
           <input style="height:40" type="image" onclick="exitSearch()" src="exit.png"></input>
           <input style="height:40" type="image" onclick="exitSearch()" src="found.png"></input>
@@ -87,7 +87,7 @@
             <td><div class='title'>Цвет глаз</div><span><div class='contents' id="eyesColor">&nbsp;</div></span></td>
             <td><div class='title'>Дата исчезновения</div><span><div class='contents' id="lostDate">&nbsp;</div></span></td>
           </tr>
-          <tr>
+          <tr style="display: none">
             <td colspan='2' id='comment'>
               <div class='title'>Комментарий</div>
               <span><div class='contents' id="commentText">&nbsp;</div></span>
