@@ -11,7 +11,11 @@ class HeaderContainer extends Component {
     render () {
         return (
             <div className='header-container'>
-                <div className="header-container__logo">Front<b>Book</b></div>
+                <div className="header-container__logo">
+                    <Link to={'/'}>
+                        Front<b>Book</b>
+                    </Link>
+                </div>
                 <div className="menu">
                     {config.map((item) => {
                         return (

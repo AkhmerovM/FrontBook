@@ -21,7 +21,7 @@ class PostListContainerWrapper extends Component {
     renderPostList (list) {
         return Object.values(list).map((post) => {
             return (
-                <Link key={post.id} to={`${this.props.match.path}/${post.id}`}>
+                <Link key={post.id} to={`/post/${post.id}`}>
                     <PostPreview post={post} />
                 </Link>
             );
