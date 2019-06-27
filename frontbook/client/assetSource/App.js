@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import initStore from 'store';
+import initStore from '/imports/frontbook/client/store';
 import { MainContainer } from 'modules/main/containers/MainContainer';
 
 const store = initStore();

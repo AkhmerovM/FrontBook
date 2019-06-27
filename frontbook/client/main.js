@@ -1,9 +1,9 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
-import {React} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from 'assetSource/App';
+import { App } from './assetSource/App';
 
 // Template.hello.onCreated(function helloOnCreated() {
 //   // counter starts at 0
