@@ -13,11 +13,11 @@ class MainContainer extends Component {
                         <HeaderContainer />
                     </div>
                     <div className="main__content">
-                        <div className="main__body">
-                            <BodyContainer />
-                        </div>
                         <div className="main__menu">
                             <MenuContainer />
+                        </div>
+                        <div className="main__body">
+                            <BodyContainer />
                         </div>
                     </div>
                 </div>

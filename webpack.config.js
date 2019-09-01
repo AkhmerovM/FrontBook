@@ -24,7 +24,7 @@ module.exports = {
                 exclude: '/node_modules'
             },
             {
-                test: /\.less$/,
+                test: /\.(less|css)$/,
                 exclude: '/node_modules',
                 use: ExtractTextPlugin.extract({
                     use: ['css-loader', 'less-loader'],
@@ -45,7 +45,7 @@ module.exports = {
         hot: true
     },
     devtool: 'source-map',
-    watch: false,
+    watch: true,
     resolve: {
         extensions: ['.jsx', '.js'],
         modules: ['node_modules', paths.src]

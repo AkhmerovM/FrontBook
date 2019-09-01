@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './style.less';
-import { Switch, Route } from 'react-router';
 import { connect } from 'react-redux';
 import { selectPostData } from 'modules/body/selectors';
 import { Link } from 'react-router-dom';
 import { PostPreview } from 'modules/body/components/PostPreview';
 import { Box } from 'modules/common/components/Box';
+import { Editor } from 'react-draft-wysiwyg';
+import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 function mapStateToProps (state) {
     return {
@@ -40,6 +41,11 @@ class PostListContainerWrapper extends Component {
                         {this.renderPostList(postList)}
                     </div>
                 </div>
+                <Editor
+                  toolbarClassName="toolbarClassName"
+                  wrapperClassName="wrapperClassName"
+                  editorClassName="editorClassName"
+                />
             </Box>
         );
     }
