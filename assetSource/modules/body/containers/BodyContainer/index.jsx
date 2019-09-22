@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import './style.less';
 import { Switch, Route } from 'react-router';
-import { Post } from 'modules/body/components/Post';
 import { Course } from 'modules/body/components/Course';
 import { CourseContainer } from 'modules/body/containers/CourseContainer';
 import { PostContainer } from 'modules/body/containers/PostContainer';
 import { PostListContainer } from 'modules/body/containers/PostListContainer';
-import { selectPostData } from 'modules/body/selectors';
 import { loadPostList } from 'modules/body/actions';
 import { connect } from 'react-redux';
 

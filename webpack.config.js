@@ -52,5 +52,8 @@ module.exports = {
     },
     watchOptions: {
         aggregateTimeout: 300
+    },
+    node: {
+        fs: 'empty'
     }
 };
