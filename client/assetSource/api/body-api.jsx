@@ -6,8 +6,8 @@ class bodyApi extends BaseApi {
     }
     static addPost (post) {
       return this.post('http://localhost:9002/post', {
-        body: post,
-      })
+          text: post
+        })
     }
 }
 export { bodyApi };

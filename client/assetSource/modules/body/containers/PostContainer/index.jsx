@@ -27,9 +27,7 @@ class PostContainerWrapper extends Component {
             <div className='post'>
                 <div onClick={this.goBack} className="post__back">Back</div>
                 <div className="post__header">{title}</div>
-                <div className="post__body">
-                    {text}
-                </div>
+                <div className="post__body" dangerouslySetInnerHTML={{__html: text}} />
             </div>
         );
     }
