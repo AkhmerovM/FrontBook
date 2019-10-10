@@ -13,7 +13,6 @@ class BaseApi {
     }
 
     static post (url, options) {
-      console.log(getOptions(options, 'post'))
       return fetch(url, getOptions(options, 'post')).then(response => response.json());
     }
 }

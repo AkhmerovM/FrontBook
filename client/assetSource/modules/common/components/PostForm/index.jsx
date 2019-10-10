@@ -22,13 +22,19 @@ class PostFormWrapper extends React.Component {
           error: '',
         };
     }
-    onChange = (content) => {
+    onChangeWisywig = (content) => {
       let text = draftToHtml(content);
       this.setState({
         content: text,
         error: ''
       })
     };
+  onChange = (event) => {
+    const target = event.target;
+    this.setState({
+      [target.name]: target.value,
+    }          )
+  };
   handleSendPost = () => {
     const {error, content} = this.state;
     if (content.length <= 8) {
@@ -41,11 +47,15 @@ class PostFormWrapper extends React.Component {
     }
   }
     render () {
-    const {error} = this.state;
+    const {error, title} = this.state;
         return (
             <div className="post-form">
+
               <div className="post-form__wysiwyg">
-                  <Wysiwyg onChange={this.onChange}/>
+                <input type="text" name='title' value={title} onChange={this.onChange}/>
+              </div>
+              <div className="post-form__wysiwyg">
+                  <Wysiwyg onChange={this.onChangeWisywig} />
               </div>
               <div className="post-form__send">
                 <div className={`post-form__btn-send post-form__btn-send_${error.length ? 'disabled' : ''}`} onClick={this.handleSendPost}>Send</div>
