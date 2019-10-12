@@ -7,7 +7,7 @@ import { PostContainer } from 'modules/body/containers/PostContainer';
 import { PostListContainer } from 'modules/body/containers/PostListContainer';
 import { loadPostList } from 'modules/body/actions';
 import { connect } from 'react-redux';
-import { NewPostContainer } from 'modules/body/containers/NewPostContainer'
+import { NewPostContainer } from 'modules/body/containers/CreatePostContainer'
 
 function mapStateToProps (state) {
     return {

@@ -22,12 +22,12 @@ class PostContainerWrapper extends Component {
         if (!post) {
             return null;
         }
-        const { title = '', text = '' } = post;
+        const { title = '', content = '' } = post;
         return (
             <div className='post'>
                 <div onClick={this.goBack} className="post__back">Back</div>
                 <div className="post__header">{title}</div>
-                <div className="post__body" dangerouslySetInnerHTML={{__html: text}} />
+                <div className="post__body" dangerouslySetInnerHTML={{__html: content}} />
             </div>
         );
     }

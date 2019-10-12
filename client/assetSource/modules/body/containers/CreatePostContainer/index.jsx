@@ -3,6 +3,10 @@ import './style.less';
 import { connect } from 'react-redux';
 import { selectCurrentPost } from 'modules/body/selectors';
 import { PostForm } from 'modules/common/components/PostForm'
+import block from 'bem-cn';
+import { Button } from 'modules/common/components/Button'
+
+const b = block('create-post');
 
 function mapStateToProps (state, props) {
     const { match } = props;
@@ -19,9 +23,9 @@ class NewPostWrapper extends Component {
         this.props.history.goBack();
     };
     render () {
-        return (
-            <div className='post'>
-                <div onClick={this.goBack} className="post__back">Back</div>
+      return (
+            <div className={b()}>
+                <Button onClick={this.goBack} >Back</Button>
                 <PostForm />
             </div>
         );
