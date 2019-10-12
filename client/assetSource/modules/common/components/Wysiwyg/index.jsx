@@ -4,7 +4,6 @@ import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 function Wysiwyg ({ onChange, value = '', name }) {
-  console.log('1232132131')
   return <Editor
         onChange={onChange}
         name={name}
@@ -12,6 +11,7 @@ function Wysiwyg ({ onChange, value = '', name }) {
         toolbarClassName="wysiwyg__toolbar"
         wrapperClassName="wysiwyg__wrapper"
         editorClassName="wysiwyg__editor"
+        handlePastedText={() => false}
     />;
 }
 

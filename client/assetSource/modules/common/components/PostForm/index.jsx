@@ -7,6 +7,7 @@ import { addPost } from 'modules/body/actions'
 import { Input } from 'modules/common/components/Input'
 import { Button } from 'modules/common/components/Button'
 import { EditorState, ContentState, convertFromHTML } from 'draft-js'
+import { SuccesfullySendPost } from 'modules/body/components/SuccesfullySendPost'
 
 function mapStateToProps() {
 return {}
@@ -23,11 +24,13 @@ class PostFormWrapper extends React.Component {
         this.state = {
           content: localStorage.getItem('content') ? localStorage.getItem('content') : '',
           error: '',
-          title: ''
+          title: '',
+          success: false,
         };
     }
     onChangeWisywig = (rawContent) => {
-      let content = draftToHtml(rawContent);
+      const content = draftToHtml(rawContent);
+      console.log(content)
       this.setState({
         content: content,
         error: ''
@@ -38,17 +41,31 @@ class PostFormWrapper extends React.Component {
     const target = event.target;
     this.setState({
       [target.name]: target.value,
+      error: '',
     });
   };
   handleSendPost = () => {
-    const {error, content, title} = this.state;
-    if (content.length <= 8) {
+    const {content, title} = this.state;
+    if (content.length <= 8 || !title) {
       this.setState({
         error: 'content is empty'
       })
+    } else {
+      this.sendPost();
     }
+  }
+  sendPost = () => {
+    const {error, content, title} = this.state;
+    console.log('sfdgdfgfdg')
     if(!error) {
       this.props.addPost({title, content});
+      this.setState({
+        content: '',
+        error: '',
+        title: '',
+        success: true,
+      });
+      localStorage.removeItem('content');
     }
   }
   checkContent = (rawContent) => {
@@ -59,8 +76,11 @@ class PostFormWrapper extends React.Component {
     return EditorState.createEmpty();
   }
     render () {
-    const {error, title, content: rawContent} = this.state;
+    const {error, title, content: rawContent, success} = this.state;
       let content = this.checkContent(rawContent);
+      if (success) {
+        return <SuccesfullySendPost />
+      }
       return (
             <div className="post-form">
 
@@ -71,7 +91,7 @@ class PostFormWrapper extends React.Component {
                   <Wysiwyg value={content} onChange={this.onChangeWisywig} />
               </div>
               <div className="post-form__send">
-                <Button disabled={error.length} onClick={this.handleSendPost} >Отправить</Button>
+                <Button disabled={Boolean(error)} onClick={this.handleSendPost} >Отправить</Button>
               </div>
               <div className="post-form__error">
                 {error}
