@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style.less';
 import { connect } from 'react-redux';
 import { selectCurrentPost } from 'modules/body/selectors';
+import { Button } from 'modules/common/components/Button'
 
 function mapStateToProps (state, props) {
     const { match } = props;
@@ -25,7 +26,7 @@ class PostContainerWrapper extends Component {
         const { title = '', content = '' } = post;
         return (
             <div className='post'>
-                <div onClick={this.goBack} className="post__back">Back</div>
+                <div className="post__back"><Button onClick={this.goBack}>Back</Button></div>
                 <div className="post__header">{title}</div>
                 <div className="post__body" dangerouslySetInnerHTML={{__html: content}} />
             </div>

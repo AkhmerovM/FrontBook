@@ -8,6 +8,4 @@ Box.Header = function BoxHeader ({ children }) {
     return <div className='box__header'>{children}</div>;
 };
 
-Box.test = 5;
-
 export { Box };
