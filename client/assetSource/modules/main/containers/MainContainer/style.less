@@ -1,9 +1,11 @@
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
-    background-color: #aeaeee;
+    background: #f4f4f4;
+    font-family: Arial;
 }
 a {
     text-decoration: none;
@@ -23,14 +25,14 @@ a {
         height: 100%;
     }
     &__body {
-        background-color: #aeeaaa;
         flex: 7;
-        height: 100%;
+        min-height: 100%;
     }
     &__menu {
-        background-color: #aeaeee;
         flex: 2;
-        height: 100%;
+        min-height: 100%;
+        background-color: #f7f7f7;
+        border-right: 1px solid #aeaaae;
     }
 
 }
