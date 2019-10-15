@@ -18,11 +18,19 @@ const loadPostList = () => {
 };
 const addPost = (post) => {
     return async function (dispatch) {
-      const { data, errors } = await bodyApi.addPost(post);
+        const { data, errors } = await bodyApi.addPost(post);
+        if (!errors.length) {
+            dispatch(actionSetPostList(normPostList(data.list)));
+        }
+    };
+};
+const updatePost = (post) => {
+    return async function (dispatch) {
+        const { data, errors } = await bodyApi.updatePost(post);
         if (!errors.length) {
             dispatch(actionSetPostList(normPostList(data.list)));
         }
     };
 };
 
-export { loadPostList, addPost};
+export { loadPostList, addPost, updatePost };

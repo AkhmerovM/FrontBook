@@ -5,7 +5,6 @@ import { selectPostData } from 'modules/body/selectors';
 import { Link } from 'react-router-dom';
 import { PostPreview } from 'modules/body/components/PostPreview';
 import { Box } from 'modules/common/components/Box';
-import { PostForm } from 'modules/common/components/PostForm'
 
 function mapStateToProps (state) {
     return {

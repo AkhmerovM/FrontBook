@@ -5,8 +5,13 @@ class bodyApi extends BaseApi {
         return this.get('http://localhost:9002/post');
     }
     static addPost (post) {
-      return this.post('http://localhost:9002/post', {
-          data: post
+        return this.post('http://localhost:9002/post', {
+            data: post
+        });
+    }
+    static updatePost (post) {
+        return this.put('http://localhost:9002/post', {
+            data: post
         });
     }
 }

@@ -5,7 +5,8 @@ const fs = require('fs');
 router.get('/', function (req, res, next) {
     const rawData = fs.readFileSync('public/post.json');
     const posts = JSON.parse(rawData);
-    res.send(posts);
+  console.log(posts)
+  res.send(posts);
 });
 router.post('/', function (req, res, next) {
     const rawData = fs.readFileSync('public/post.json');
@@ -17,6 +18,26 @@ router.post('/', function (req, res, next) {
     };
     posts.data.list.push(newPost); // add some data
     let json = JSON.stringify(posts); // convert it back to json
+    fs.writeFile('public/post.json', json, 'utf8'); // write it back
+    res.send(json);
+});
+router.put('/', function (req, res, next) {
+    const rawData = fs.readFileSync('public/post.json');
+    const posts = JSON.parse(rawData);
+    let response = posts;
+    const id = req.body.data.id;
+    const newPosts = posts.data.list.map((post) => {
+        if (post.id === id) {
+            return {
+                id: id,
+                title: req.body.data.title,
+                content: req.body.data.content
+            };
+        }
+        return post;
+    });
+      response.data.list = newPosts;
+    let json = JSON.stringify(response); // convert it back to json
     fs.writeFile('public/post.json', json, 'utf8'); // write it back
     res.send(json);
 });

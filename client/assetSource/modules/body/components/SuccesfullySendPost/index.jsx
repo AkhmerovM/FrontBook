@@ -4,13 +4,13 @@ import block from 'bem-cn';
 
 const b = block('success-send-post');
 
-function SuccesfullySendPost() {
-		return (
+function SuccesfullySendPost ({ text }) {
+    return (
 		  <div className={b()}>
 			  <div className={b('title')}>
-				  Ваша статья успешно добавлена
+                {text}
 			  </div>
 		  </div>
-		);
+    );
 }
 export { SuccesfullySendPost };

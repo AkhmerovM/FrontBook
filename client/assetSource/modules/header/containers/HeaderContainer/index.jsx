@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const config = [
     { id: '1', name: 'Статьи', url: 'post' },
     { id: '2', name: 'Курсы', url: 'course' },
-    { id: '3', name: 'Написать статью', url: 'new-course' }
+    { id: '3', name: 'Написать статью', url: 'new-post' }
 ];
 
 class HeaderContainer extends Component {

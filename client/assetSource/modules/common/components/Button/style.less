@@ -6,14 +6,19 @@
     text-decoration: none;
     padding: .8em 1em calc(.8em + 3px);
     border-radius: 3px;
-    background: rgb(64,199,129);
-    box-shadow: 0 -3px rgb(53,167,110) inset;
-    transition: 0.2s;
-    :hover { background: rgb(53, 167, 110); }
-    :active {
-        background: rgb(33,147,90);
-        box-shadow: 0 3px rgb(33,147,90) inset;
+    &_green {
+        background: rgb(64,199,129);
+        box-shadow: 0 -3px rgb(53,167,110) inset;
     }
+    &_red {
+        background: rgb(199, 79, 73);
+        box-shadow: 0 -3px rgb(131, 49, 36) inset;
+    }
+    &_orange {
+        background: rgb(199, 188, 59);
+        box-shadow: 0 -3px rgb(131, 108, 29) inset;
+    }
+    transition: 0.2s;
     &_disabled {
         background-color: #aeaaae;
         pointer-events: none;

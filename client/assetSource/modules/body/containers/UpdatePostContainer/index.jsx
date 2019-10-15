@@ -5,37 +5,47 @@ import { selectCurrentPost } from 'modules/body/selectors';
 import { PostForm } from 'modules/common/components/PostForm'
 import block from 'bem-cn';
 import { Button } from 'modules/common/components/Button'
+import { updatePost } from 'modules/body/actions'
 
 const b = block('create-post');
 
 function mapStateToProps (state, props) {
     const { match } = props;
-    return {
+  return {
         post: selectCurrentPost(state, match.params.id)
     };
 }
 function mapDispatchToProps () {
     return {
+      updatePost
     };
 }
-class CreatePostWrapper extends Component {
+class UpdatePostWrapper extends Component {
     goBack = () => {
         this.props.history.goBack();
     };
-      sendPost = (post) => {
-        if(!error) {
-          this.props.addPost(post);
-          localStorage.removeItem('content');
+    updatePost = (newPost) => {
+      const {updatePost, post} = this.props;
+      console.log(post)
+      console.log(newPost)
+      updatePost({
+          ...post,
+          ...newPost
         }
-      }
+      )
+    }
     render () {
+      const {post} = this.props;
+      if (!post) {
+        return 'статья не найдена';
+      }
       return (
             <div className={b()}>
                 <Button onClick={this.goBack} >Back</Button>
-                <PostForm onSubmit={this.sendPost} />
+                <PostForm post={post} onSubmit={this.updatePost} type='update' />
             </div>
         );
     }
 }
-const CreatePostContainer = connect(mapStateToProps, mapDispatchToProps())(CreatePostWrapper);
-export { CreatePostContainer };
+const UpdatePostContainer = connect(mapStateToProps, mapDispatchToProps())(UpdatePostWrapper);
+export { UpdatePostContainer };

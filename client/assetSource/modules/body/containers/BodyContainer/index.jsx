@@ -7,7 +7,9 @@ import { PostContainer } from 'modules/body/containers/PostContainer';
 import { PostListContainer } from 'modules/body/containers/PostListContainer';
 import { loadPostList } from 'modules/body/actions';
 import { connect } from 'react-redux';
-import { NewPostContainer } from 'modules/body/containers/CreatePostContainer'
+import { PostForm } from 'modules/common/components/PostForm'
+import { CreatePostContainer } from 'modules/body/containers/CreatePostContainer'
+import { UpdatePostContainer } from 'modules/body/containers/UpdatePostContainer'
 
 function mapStateToProps (state) {
     return {
@@ -31,7 +33,8 @@ class BodyContainerWrapper extends Component {
                     <Route component={PostListContainer} exact path='/post' />
                     <Route component={Course} exact path='/course/:id' />
                     <Route component={PostContainer} exact path='/post/:id' />
-                    <Route component={NewPostContainer} exact path='/new-course' />
+                    <Route component={UpdatePostContainer} exact path='/post/edit/:id' />
+                    <Route component={CreatePostContainer} exact path='/new-post' />
                     <Route component={PostListContainer} exact path='/' />
                 </Switch>
             </div>

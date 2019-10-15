@@ -2,35 +2,32 @@ import React from 'react';
 import './style.less';
 import { Wysiwyg } from 'modules/common/components/Wysiwyg';
 import draftToHtml from 'draftjs-to-html';
-import { connect } from 'react-redux'
-import { addPost } from 'modules/body/actions'
 import { Input } from 'modules/common/components/Input'
 import { Button } from 'modules/common/components/Button'
 import { EditorState, ContentState, convertFromHTML } from 'draft-js'
 import { SuccesfullySendPost } from 'modules/body/components/SuccesfullySendPost'
 
-function mapStateToProps() {
-return {}
-}
-function mapDispatchToProps() {
-  return {
-    addPost,
-  }
-}
-
-class PostFormWrapper extends React.Component {
-  constructor () {
-        super();
+class PostForm extends React.Component {
+  constructor (props) {
+    console.log(props)
+    super(props);
         this.state = {
-          content: localStorage.getItem('content') ? localStorage.getItem('content') : '',
+          content: props.post.content,
           error: '',
-          title: '',
+          title: props.post.title,
           success: false,
         };
     }
-    onChangeWisywig = (rawContent) => {
+  static defaultProps = {
+    type: 'create',
+    post: {
+      id: null,
+      title: null,
+      content: localStorage.getItem('content') ? localStorage.getItem('content') : '',
+    },
+  };
+  onChangeWisywig = (rawContent) => {
       const content = draftToHtml(rawContent);
-      console.log(content)
       this.setState({
         content: content,
         error: ''
@@ -44,30 +41,27 @@ class PostFormWrapper extends React.Component {
       error: '',
     });
   };
-  handleSendPost = () => {
+  handleValidation = () => {
+    const {onSubmit} = this.props;
     const {content, title} = this.state;
     if (content.length <= 8 || !title) {
       this.setState({
         error: 'content is empty'
       })
     } else {
-      this.sendPost();
-    }
-  }
-  sendPost = () => {
-    const {error, content, title} = this.state;
-    console.log('sfdgdfgfdg')
-    if(!error) {
-      this.props.addPost({title, content});
+      onSubmit({
+        content: content,
+        title: title,
+      });
       this.setState({
         content: '',
         error: '',
         title: '',
         success: true,
       });
-      localStorage.removeItem('content');
     }
   }
+
   checkContent = (rawContent) => {
     const contentState = ContentState.createFromBlockArray(convertFromHTML(rawContent));
     if (contentState.getBlockMap().count()) {
@@ -76,14 +70,14 @@ class PostFormWrapper extends React.Component {
     return EditorState.createEmpty();
   }
     render () {
+    const {type} = this.props;
     const {error, title, content: rawContent, success} = this.state;
       let content = this.checkContent(rawContent);
       if (success) {
-        return <SuccesfullySendPost />
+        return <SuccesfullySendPost text={successConfig[type]} />
       }
       return (
             <div className="post-form">
-
               <div className="post-form__wysiwyg">
                 <Input type="text" placeholder='Название' label='Название статьи' name='title' value={title} onChange={this.onChange}/>
               </div>
@@ -91,7 +85,7 @@ class PostFormWrapper extends React.Component {
                   <Wysiwyg value={content} onChange={this.onChangeWisywig} />
               </div>
               <div className="post-form__send">
-                <Button disabled={Boolean(error)} onClick={this.handleSendPost} >Отправить</Button>
+                <Button disabled={Boolean(error)} onClick={this.handleValidation} >{buttonConfig[type]}</Button>
               </div>
               <div className="post-form__error">
                 {error}
@@ -100,5 +94,12 @@ class PostFormWrapper extends React.Component {
         );
     }
 }
-const PostForm = connect(mapStateToProps, mapDispatchToProps())(PostFormWrapper);
+const buttonConfig = {
+  create: 'Отправить',
+  update: 'Сохранить',
+}
+const successConfig = {
+  create: 'Ваша статья успешно добавлена',
+  update: 'Ваша статья успешно обновлена',
+}
 export { PostForm };
