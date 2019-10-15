@@ -5,8 +5,8 @@ const fs = require('fs');
 router.get('/', function (req, res, next) {
     const rawData = fs.readFileSync('public/post.json');
     const posts = JSON.parse(rawData);
-  console.log(posts)
-  res.send(posts);
+    console.log(posts);
+    res.send(posts);
 });
 router.post('/', function (req, res, next) {
     const rawData = fs.readFileSync('public/post.json');
@@ -36,8 +36,21 @@ router.put('/', function (req, res, next) {
         }
         return post;
     });
-      response.data.list = newPosts;
+    response.data.list = newPosts;
     let json = JSON.stringify(response); // convert it back to json
+    fs.writeFile('public/post.json', json, 'utf8'); // write it back
+    res.send(json);
+});
+router.delete('/', function (req, res, next) {
+    const rawData = fs.readFileSync('public/post.json');
+    const posts = JSON.parse(rawData);
+    let response = posts;
+    const id = +req.body.data;
+    response.data.list = posts.data.list.filter((post) => {
+      console.log(post.id !== id)
+      return post.id !== id;
+    });
+  let json = JSON.stringify(response); // convert it back to json
     fs.writeFile('public/post.json', json, 'utf8'); // write it back
     res.send(json);
 });

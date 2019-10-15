@@ -17,5 +17,8 @@ class BaseApi {
     static put (url, options) {
         return fetch(url, getOptions(options, 'PUT')).then(response => response.json());
     }
+    static delete (url, options) {
+        return fetch(url, getOptions(options, 'DELETE')).then(response => response.json());
+    }
 }
 export { BaseApi };

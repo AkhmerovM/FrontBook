@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { selectCurrentPost } from 'modules/body/selectors';
 import { Button } from 'modules/common/components/Button'
 import { Link } from 'react-router-dom'
+import { removePost } from 'modules/body/actions'
 
 function mapStateToProps (state, props) {
     const { match } = props;
@@ -13,6 +14,7 @@ function mapStateToProps (state, props) {
 }
 function mapDispatchToProps () {
     return {
+      removePost
     };
 }
 class PostContainerWrapper extends Component {
@@ -20,8 +22,8 @@ class PostContainerWrapper extends Component {
         this.props.history.goBack();
     };
     removePost = () => {
-      const { match } = this.props;
-      console.log(match.params.id)
+      const { match, removePost } = this.props;
+      removePost(match.params.id);
     }
     EditPost = () => {
       const { match } = this.props;

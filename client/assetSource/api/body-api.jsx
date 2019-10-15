@@ -14,5 +14,10 @@ class bodyApi extends BaseApi {
             data: post
         });
     }
+    static removePost (id) {
+        return this.delete('http://localhost:9002/post', {
+            data: id
+        });
+    }
 }
 export { bodyApi };

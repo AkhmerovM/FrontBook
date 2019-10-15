@@ -32,5 +32,13 @@ const updatePost = (post) => {
         }
     };
 };
+const removePost = (id) => {
+    return async function (dispatch) {
+        const { data, errors } = await bodyApi.removePost(id);
+        if (!errors.length) {
+            dispatch(actionSetPostList(normPostList(data.list)));
+        }
+    };
+};
 
-export { loadPostList, addPost, updatePost };
+export { loadPostList, addPost, updatePost, removePost };
