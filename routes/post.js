@@ -47,10 +47,10 @@ router.delete('/', function (req, res, next) {
     let response = posts;
     const id = +req.body.data;
     response.data.list = posts.data.list.filter((post) => {
-      console.log(post.id !== id)
-      return post.id !== id;
+        console.log(post.id !== id);
+        return post.id !== id;
     });
-  let json = JSON.stringify(response); // convert it back to json
+    let json = JSON.stringify(response); // convert it back to json
     fs.writeFile('public/post.json', json, 'utf8'); // write it back
     res.send(json);
 });

@@ -23,16 +23,14 @@ class CreatePostWrapper extends Component {
         this.props.history.goBack();
     };
       sendPost = (post) => {
-        if(!error) {
           this.props.addPost(post);
           localStorage.removeItem('content');
-        }
       }
     render () {
       return (
             <div className={b()}>
                 <Button onClick={this.goBack} >Back</Button>
-                <PostForm onSubmit={this.sendPost} />
+                <PostForm writeToLocalStorage={true} onSubmit={this.sendPost} />
             </div>
         );
     }

@@ -9,10 +9,9 @@ import { SuccesfullySendPost } from 'modules/body/components/SuccesfullySendPost
 
 class PostForm extends React.Component {
   constructor (props) {
-    console.log(props)
     super(props);
         this.state = {
-          content: props.post.content,
+          content: props.post.content || localStorage.getItem('content') || '',
           error: '',
           title: props.post.title,
           success: false,
@@ -22,17 +21,20 @@ class PostForm extends React.Component {
     type: 'create',
     post: {
       id: null,
+      writeToLocalStorage: false,
       title: null,
-      content: localStorage.getItem('content') ? localStorage.getItem('content') : '',
     },
   };
   onChangeWisywig = (rawContent) => {
       const content = draftToHtml(rawContent);
+      const {writeToLocalStorage} = this.props;
       this.setState({
         content: content,
         error: ''
       });
-      localStorage.setItem('content', content);
+       if (writeToLocalStorage) {
+         localStorage.setItem('content', content);
+       }
     };
   onChange = (event) => {
     const target = event.target;
