@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
 const fs = require('fs');
+const userQuery = require('../db/user');
 
 router.get('/', function (req, res, next) {
-    const rawData = fs.readFileSync('public/post.json');
-    const posts = JSON.parse(rawData);
-    console.log(posts);
-    res.send(posts);
+    // const rawData = fs.readFileSync('public/post.json');
+    // const posts = JSON.parse(rawData);
+    // console.log(posts);
+    // res.send(posts);
+  console.log(userQuery.getUsers());
 });
 router.post('/', function (req, res, next) {
     const rawData = fs.readFileSync('public/post.json');
