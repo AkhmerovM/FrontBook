@@ -5,6 +5,7 @@ import { selectCurrentPost } from 'modules/body/selectors';
 import { Button } from 'modules/common/components/Button'
 import { Link } from 'react-router-dom'
 import { removePost } from 'modules/body/actions'
+import { Author } from 'modules/body/components/Author'
 
 function mapStateToProps (state, props) {
     const { match } = props;
@@ -34,7 +35,7 @@ class PostContainerWrapper extends Component {
         if (!post) {
             return null;
         }
-        const { title = '', content = '', id} = post;
+        const { title = '', content = '', id, author} = post;
         return (
             <div className='post'>
                 <div className="post__buttons">
@@ -45,9 +46,14 @@ class PostContainerWrapper extends Component {
                           Edit
                         </Button>
                       </Link></div>
-                    <div className="post__remove"><Button color='red' onClick={this.removePost}>Remove</Button></div>
+                    <div className="post__remove">
+                      <Button color='red' onClick={this.removePost}>Remove</Button>
+                    </div>
                 </div>
                 <div className="post__header">{title}</div>
+                <div className="post__author">
+                  <Author author={author} />
+                </div>
                 <div className="post__body" dangerouslySetInnerHTML={{__html: content}} />
             </div>
         );
