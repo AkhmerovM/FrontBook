@@ -55,6 +55,9 @@ class PostContainerWrapper extends Component {
                   <Author author={author} />
                 </div>
                 <div className="post__body" dangerouslySetInnerHTML={{__html: content}} />
+              <div className='post__comments'>
+
+              </div>
             </div>
         );
     }
