@@ -54,6 +54,7 @@ class PostForm extends React.Component {
       onSubmit({
         content: content,
         title: title,
+        userId: 1,
       });
       this.setState({
         content: '',

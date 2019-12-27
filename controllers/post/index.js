@@ -23,7 +23,7 @@ class PostController {
     }
     static async createPost (req, res) {
         try {
-            const post = await models.Post.create(req.body);
+            const post = await models.Post.create(req.body.data);
             return res.status(201).json({
                 post
             });

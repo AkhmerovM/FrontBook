@@ -31,6 +31,7 @@ class PostListContainerWrapper extends Component {
         if (!postList) {
             return null;
         }
+        console.log(postList)
         return (
             <Box>
                 <div className='post-list-container'>

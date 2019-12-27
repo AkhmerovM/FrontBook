@@ -5,6 +5,7 @@ import { selectCurrentPost } from 'modules/body/selectors';
 import { PostForm } from 'modules/common/components/PostForm'
 import block from 'bem-cn';
 import { Button } from 'modules/common/components/Button'
+import { addPost } from 'modules/body/actions'
 
 const b = block('create-post');
 
@@ -16,6 +17,7 @@ function mapStateToProps (state, props) {
 }
 function mapDispatchToProps () {
     return {
+      addPost
     };
 }
 class CreatePostWrapper extends Component {
