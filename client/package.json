@@ -61,6 +61,6 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "react-draft-wysiwyg": "^1.13.2"
+    "react-draft-wysiwyg": "^1.14.6"
   }
 }
